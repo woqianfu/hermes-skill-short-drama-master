@@ -1,0 +1,8 @@
+# 加密剧本库 (319 files, 19MB) - not for public distribution
+# 加密剧本库不公开分发
+assets/short-writing/full-scripts/
+
+# Backup files
+*.original
+*.step1
+*.bak

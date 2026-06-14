@@ -1,0 +1,370 @@
+{
+  "case_cards": 319,
+  "categories": {
+    "古装短剧/古装权谋": {
+      "audience_emotion": "身份等级压迫下的规则反用",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "玉佩",
+        "监控"
+      ],
+      "common_opening": "朝堂、后宅、婚宴或刑罚场里，主角被公开审判。",
+      "common_opening_scenes": [
+        "公开压迫场",
+        "朝堂",
+        "家宴",
+        "酒店",
+        "医院",
+        "寿宴",
+        "公司",
+        "婚礼"
+      ],
+      "common_pitfalls": [
+        "只换古装皮",
+        "礼法规则不推动剧情",
+        "反派无权力"
+      ],
+      "sample_count": 12
+    },
+    "女频短剧/甜宠": {
+      "audience_emotion": "强绑定关系里的亲密推进",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "照片",
+        "报告",
+        "视频",
+        "短信",
+        "病历",
+        "监控"
+      ],
+      "common_opening": "闪婚、契约、救助、同居或误会把两人强行绑在一起。",
+      "common_opening_scenes": [
+        "医院",
+        "酒店",
+        "公司",
+        "婚礼",
+        "公开压迫场",
+        "学校",
+        "家宴"
+      ],
+      "common_pitfalls": [
+        "只有甜没有阻碍",
+        "没有下一集问题",
+        "外敌不推动关系"
+      ],
+      "sample_count": 29
+    },
+    "女频短剧/萌宝": {
+      "audience_emotion": "孩子作为线索和关系债",
+      "common_evidence_objects": [
+        "鉴定",
+        "证据物件需重设",
+        "报告",
+        "照片"
+      ],
+      "common_opening": "孩子制造相遇、危机或误会，让亲子秘密变成第一屏钩子。",
+      "common_opening_scenes": [
+        "医院",
+        "酒店",
+        "公司",
+        "公开压迫场",
+        "病房"
+      ],
+      "common_pitfalls": [
+        "孩子只卖萌",
+        "鉴定一次解决",
+        "亲子线不推动主线"
+      ],
+      "sample_count": 12
+    },
+    "女频短剧/虐恋": {
+      "audience_emotion": "深误会后的情绪清算",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "玉佩",
+        "报告",
+        "监控",
+        "合同",
+        "遗嘱",
+        "照片"
+      ],
+      "common_opening": "亲密关系把主角逼到绝境，误判有证据、场面和旁人站队。",
+      "common_opening_scenes": [
+        "公司",
+        "医院",
+        "病房",
+        "寿宴",
+        "婚礼"
+      ],
+      "common_pitfalls": [
+        "虐而不爽",
+        "误会只靠不说话",
+        "主角无行动"
+      ],
+      "sample_count": 13
+    },
+    "女频短剧/追妻火葬场": {
+      "audience_emotion": "错爱追悔和行动补偿",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "鉴定",
+        "照片",
+        "监控",
+        "短信"
+      ],
+      "common_opening": "亲密关系对象当众误判主角，造成可见且不可逆的伤害。",
+      "common_opening_scenes": [
+        "酒店",
+        "医院",
+        "公司",
+        "病房",
+        "公开压迫场"
+      ],
+      "common_pitfalls": [
+        "伤害不具体",
+        "追悔只靠哭",
+        "主角长期无行动"
+      ],
+      "sample_count": 9
+    },
+    "女频短剧/重生复仇": {
+      "audience_emotion": "被害者带证据逐层清算",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "照片",
+        "视频",
+        "合同",
+        "录音",
+        "监控",
+        "遗嘱",
+        "短信"
+      ],
+      "common_opening": "旧伤或当下羞辱先被看见，主角在关键选择上不再重蹈覆辙。",
+      "common_opening_scenes": [
+        "公司",
+        "公开压迫场",
+        "酒店",
+        "医院",
+        "婚礼",
+        "学校",
+        "病房",
+        "寿宴"
+      ],
+      "common_pitfalls": [
+        "主角过早碾压",
+        "只有打脸没有旧债",
+        "反派太蠢"
+      ],
+      "sample_count": 60
+    },
+    "女频短剧/霸总": {
+      "audience_emotion": "权力差误判后的偏爱和公开选择",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "照片",
+        "视频",
+        "合同",
+        "遗嘱",
+        "股权",
+        "短信",
+        "鉴定"
+      ],
+      "common_opening": "女主在婚姻、职场或豪门场被公开误判，权力方站错队。",
+      "common_opening_scenes": [
+        "公司",
+        "医院",
+        "酒店",
+        "婚礼",
+        "病房",
+        "公开压迫场",
+        "学校",
+        "饭桌"
+      ],
+      "common_pitfalls": [
+        "只有命令和宠爱",
+        "女主没有低位压力",
+        "反击工具不具体"
+      ],
+      "sample_count": 40
+    },
+    "家庭向/年代家庭": {
+      "audience_emotion": "家人误判、生活压迫和家庭站队",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "视频"
+      ],
+      "common_opening": "饭桌、邻里或家族场景里，主角被公开定罪或排斥。",
+      "common_opening_scenes": [
+        "公开压迫场",
+        "婚礼",
+        "公司",
+        "酒店",
+        "医院"
+      ],
+      "common_pitfalls": [
+        "只吵架",
+        "没有生活事件",
+        "站队不变化"
+      ],
+      "sample_count": 13
+    },
+    "悬疑短剧": {
+      "audience_emotion": "真相碎片和误判反转",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "短信",
+        "视频",
+        "遗嘱",
+        "玉佩"
+      ],
+      "common_opening": "一个异常事件或公开指控让主角陷入误判。",
+      "common_opening_scenes": [
+        "公司",
+        "医院",
+        "公开压迫场",
+        "学校",
+        "直播间",
+        "病房"
+      ],
+      "common_pitfalls": [
+        "只藏信息",
+        "没有情绪受害者",
+        "线索不改变行动"
+      ],
+      "sample_count": 11
+    },
+    "未分类待判断/其他": {
+      "audience_emotion": "强情绪压迫和持续反转",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "监控",
+        "照片",
+        "鉴定",
+        "视频",
+        "短信",
+        "报告",
+        "合同"
+      ],
+      "common_opening": "用公开压迫或不可逆事件替代背景介绍。",
+      "common_opening_scenes": [
+        "公开压迫场",
+        "公司",
+        "酒店",
+        "医院",
+        "婚礼",
+        "学校",
+        "家宴",
+        "朝堂"
+      ],
+      "common_pitfalls": [
+        "类型承诺不清",
+        "爽点分散",
+        "支线太多"
+      ],
+      "sample_count": 65
+    },
+    "男频短剧/修仙": {
+      "audience_emotion": "超常能力进入现实压迫",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "视频",
+        "合同",
+        "玉佩",
+        "遗嘱",
+        "鉴定",
+        "短信",
+        "监控"
+      ],
+      "common_opening": "主角能力被低估或误解，现实羞辱逼出第一层能力。",
+      "common_opening_scenes": [
+        "公司",
+        "公开压迫场",
+        "医院",
+        "酒店",
+        "学校",
+        "婚礼",
+        "直播间"
+      ],
+      "common_pitfalls": [
+        "能力无代价",
+        "规则不清",
+        "现实情绪太弱"
+      ],
+      "sample_count": 25
+    },
+    "男频短剧/战神": {
+      "audience_emotion": "强者被低估后的层层释放",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "监控",
+        "录音",
+        "照片"
+      ],
+      "common_opening": "主角以低位身份被公开羞辱，强者身份只露一角。",
+      "common_opening_scenes": [
+        "公开压迫场",
+        "婚礼",
+        "公司",
+        "酒店",
+        "寿宴",
+        "医院"
+      ],
+      "common_pitfalls": [
+        "第一集直接无敌",
+        "没有更高压迫者",
+        "只打脸不救人"
+      ],
+      "sample_count": 15
+    },
+    "男频短剧/神豪": {
+      "audience_emotion": "金钱羞辱后的财富反差",
+      "common_evidence_objects": [
+        "视频",
+        "照片",
+        "合同",
+        "证据物件需重设"
+      ],
+      "common_opening": "现场出现必须用资源解决的危机，主角被低估。",
+      "common_opening_scenes": [
+        "医院",
+        "公司",
+        "酒店"
+      ],
+      "common_pitfalls": [
+        "只堆金额",
+        "没有现实危机",
+        "关系误判不足"
+      ],
+      "sample_count": 5
+    },
+    "男频短剧/赘婿": {
+      "audience_emotion": "家庭低位者逆袭并改变站队",
+      "common_evidence_objects": [
+        "证据物件需重设",
+        "合同",
+        "玉佩",
+        "鉴定",
+        "视频",
+        "监控"
+      ],
+      "common_opening": "饭桌、婚礼或公司会议里主角被妻族公开羞辱。",
+      "common_opening_scenes": [
+        "公司",
+        "酒店",
+        "公开压迫场",
+        "医院",
+        "病房",
+        "寿宴"
+      ],
+      "common_pitfalls": [
+        "只有打脸",
+        "妻子站队不清楚",
+        "关系债不足"
+      ],
+      "sample_count": 10
+    }
+  },
+  "mode": "distilled_portable_library",
+  "records": 319,
+  "source_policy": "No full scripts are included. Records contain labels, mechanisms, patterns, and replacement rules only."
+}
