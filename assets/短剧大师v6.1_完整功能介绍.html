@@ -15,7 +15,7 @@
 * { margin:0; padding:0; box-sizing:border-box; }
 body { background:#050508; color:var(--text); font-family:'PingFang SC','Noto Sans SC','Microsoft YaHei',sans-serif; display:flex; flex-direction:column; align-items:center; }
 .slide { width:var(--slide-w); min-height:var(--slide-h); background:linear-gradient(180deg,#0a0a12,#0d0d18 40%,#0a0a12); border:1px solid var(--border); border-radius:12px; margin:24px 0; padding:34px 20px; position:relative; overflow:hidden; display:flex; flex-direction:column; justify-content:center; }
-.slide::before { content:''; position:absolute; top:0;left:0;right:0;height:1px; background:linear-gradient(90deg,transparent,var(--gold),transparent); opacity:0.15; }
+
 .cover { text-align:center; }
 .cover h1 { font-size:2.6rem; background:linear-gradient(180deg,var(--warm-gold),var(--gold)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-weight:900; letter-spacing:3px; }
 .cover .sub { font-size:0.9rem; color:var(--text-dim); margin-top:4px; }
@@ -66,27 +66,37 @@ h2 { font-size:1.45rem; color:var(--warm-gold); margin-bottom:2px; font-weight:8
 
 <!-- P1: Cover -->
 <div class="slide cover">
-  <h1 style="font-size:2.4rem;margin-top:-10px;">短剧大师™</h1>
-  <div class="sub">Short Drama Master v6.1</div>
-  <div class="oneliner" style="margin:14px 0;">
-    <div style="font-size:0.88rem;color:var(--bone);line-height:2;">
-      一句话 → AI微短剧成片
-    </div>
-    <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:8px 0;">
-      <span style="font-size:0.65rem;color:var(--warm-gold);">十九大师军团</span>
-      <span style="color:var(--text-dim);">·</span>
-      <span style="font-size:0.65rem;color:var(--purple);">精密工程化</span>
-      <span style="color:var(--text-dim);">·</span>
-      <span style="font-size:0.65rem;color:var(--cyan);">自我进化</span>
-    </div>
-    <span class="en" style="font-size:0.62rem;">One sentence → Finished AI short drama<br>19-Master Legion · Precision Engineered · Self-Evolving</span>
+  <h1 style="font-size:2.6rem;">短剧大师™</h1>
+  <div class="sub" style="font-size:0.85rem;">Short Drama Master · v6.1</div>
+
+  <div style="margin:20px auto;max-width:280px;">
+    <p style="font-size:0.92rem;color:var(--bone);line-height:1.8;margin:0;">
+      从 <span style="color:var(--warm-gold);">一句话</span> 到 <span style="color:var(--warm-gold);">AI微短剧成片</span>
+    </p>
+    <p style="font-size:0.65rem;color:var(--text-dim);margin:6px 0 0;">
+      From one sentence to finished AI short drama
+    </p>
   </div>
-  <div style="margin-top:12px;display:flex;flex-direction:column;gap:4px;align-items:center;">
-    <div style="background:rgba(212,168,67,0.08);border:1px solid rgba(212,168,67,0.2);border-radius:6px;padding:6px 18px;font-size:0.65rem;color:var(--warm-gold);width:fit-content;">省~73% token · 720P量→1080P质</div>
-    <div style="background:rgba(139,92,246,0.08);border:1px solid rgba(139,92,246,0.2);border-radius:6px;padding:6px 18px;font-size:0.65rem;color:var(--purple);width:fit-content;">321部加密剧本库 + 875条蒸馏案例</div>
-    <div style="background:rgba(6,182,212,0.08);border:1px solid rgba(6,182,212,0.2);border-radius:6px;padding:6px 18px;font-size:0.65rem;color:var(--cyan);width:fit-content;">每日00:00自进化 · DCI数字版权认证</div>
-    <div style="background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.2);border-radius:6px;padding:6px 18px;font-size:0.65rem;color:var(--green);width:fit-content;">14道SQ质量关卡 · 一关不过全剧不交</div>
+
+  <div style="display:flex;gap:12px;justify-content:center;margin:16px 0;">
+    <div class="stat" style="padding:12px 10px;min-width:70px;"><div class="num">19</div><div class="label">大师</div></div>
+    <div class="stat" style="padding:12px 10px;min-width:70px;"><div class="num">~73%</div><div class="label">省Token</div></div>
+    <div class="stat" style="padding:12px 10px;min-width:70px;"><div class="num">321</div><div class="label">剧本库</div></div>
+    <div class="stat" style="padding:12px 10px;min-width:70px;"><div class="num">00:00</div><div class="label">自进化</div></div>
   </div>
+
+  <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:4px 0;">
+    <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--warm-gold);">720P量→1080P质</span>
+    <span style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--purple);">19大师创作军团</span>
+    <span style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--cyan);">每日自进化</span>
+    <span style="background:rgba(34,197,94,0.1);border:1px solid rgba(34,197,94,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--green);">DCI认证</span>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;">
+    <span style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--warm-gold);">14道SQ关卡</span>
+    <span style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--purple);">20维质量穷举</span>
+    <span style="background:rgba(6,182,212,0.1);border:1px solid rgba(6,182,212,0.2);border-radius:14px;padding:4px 12px;font-size:0.6rem;color:var(--cyan);">875蒸馏案例</span>
+  </div>
+
   <div class="footer-bar">── 短剧大师™ · Short Drama Master ──</div>
 </div>
 
