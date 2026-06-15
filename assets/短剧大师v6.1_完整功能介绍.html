@@ -306,32 +306,6 @@ h2 { font-size:1.45rem; color:var(--warm-gold); margin-bottom:2px; font-weight:8
 <div class="slide"><div class="page-num">07</div>
   <h2>🏛️ 十九大师会审</h2>
 
-  <div style="display:flex;gap:6px;margin:6px 0;">
-    <div class="step-card">
-      <div class="step-num">STEP 1</div>
-      <div class="step-label">📥 提交</div>
-      <div class="step-sub">剧本送达</div>
-    </div>
-    <div style="display:flex;align-items:center;color:var(--gold);">→</div>
-    <div class="step-card">
-      <div class="step-num">STEP 2</div>
-      <div class="step-label">🔍 审阅</div>
-      <div class="step-sub">19大师并行</div>
-    </div>
-    <div style="display:flex;align-items:center;color:var(--gold);">→</div>
-    <div class="step-card">
-      <div class="step-num">STEP 3</div>
-      <div class="step-label">📊 报告</div>
-      <div class="step-sub">四档排序</div>
-    </div>
-    <div style="display:flex;align-items:center;color:var(--gold);">→</div>
-    <div class="step-card">
-      <div class="step-num">STEP 4</div>
-      <div class="step-label">✅ 裁定</div>
-      <div class="step-sub">修/过/改</div>
-    </div>
-  </div>
-
   <table class="table">
     <tr><th style="width:22%;">模式</th><th>调用示例</th></tr>
     <tr><td>🩺 单大师出诊</td><td>「暗线大师，查E01-E10代价曲线」</td></tr>
@@ -339,12 +313,23 @@ h2 { font-size:1.45rem; color:var(--warm-gold); margin-bottom:2px; font-weight:8
     <tr><td>⚔️ 全军会审</td><td>「十九大师会审E01-E60」</td></tr>
   </table>
 
-  <div class="highlight">
-    <strong>流程：</strong>剧本提交 → 19位大师并行审阅各自维度 → 每位产出判定+行号+修复建议 → 合并会审报告 → 按🔴阻塞/🟠重要/🟡建议/🟢优秀四档排序 → 用户裁定
+  <div class="flow" style="line-height:1.6;">
+    <strong>📥 剧本提交</strong><br>
+    <span style="font-size:0.62rem;color:var(--text-dim);">Script submitted for review</span><br>
+    <span style="color:var(--gold);font-size:0.7rem;">↓</span><br>
+    <strong>🔍 19位大师并行审阅</strong><br>
+    <span style="font-size:0.62rem;color:var(--text-dim);">各自读取关注的维度，每位产出：判定 + 行号 + 修复建议</span><br>
+    <span style="color:var(--gold);font-size:0.7rem;">↓</span><br>
+    <strong>📊 合并会审报告</strong><br>
+    <span style="font-size:0.62rem;color:var(--text-dim);">按严重度四档排序：🔴阻塞 → 🟠重要 → 🟡建议 → 🟢优秀</span><br>
+    <span style="color:var(--gold);font-size:0.7rem;">↓</span><br>
+    <strong>✅ 用户裁定</strong><br>
+    <span style="font-size:0.62rem;color:var(--text-dim);">修改后重审 / 直接通过 / 逐大师修改</span>
   </div>
 
-  <div class="highlight">
-    <strong>每位大师独立范本输出：</strong>诊断头部 → 逐项判定 → 📊统计(通过率%) → 大师签字
+  <div class="highlight" style="font-size:0.75rem;">
+    <strong>每位大师独立范本输出</strong><br>
+    诊断头部 → 逐项判定 → 📊统计(通过率%) → 大师签字
   </div>
 
   <div class="footer-bar">── 短剧大师™ · Short Drama Master ──</div>

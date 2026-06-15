@@ -1,109 +1,107 @@
-# PPT/PDF 生成实战指南 — 竖版暗色风 · 中英双语 / Vertical Dark Bilingual PDF Guide
+# PPT/PDF 生成指南 — 竖版暗色影视风 / Vertical Dark Cinematic PPT Guide
 
-> 基于 v6.1 十轮迭代打磨出的稳定方案。每个参数都是踩坑踩出来的。
+> 短剧大师™ 的 PPT/PDF 输出规范。所有设计规则来自 v6.1 多轮迭代验证。
+> 目标：390×844px（iPhone 14 比例），手机端阅读舒适，不撑出格，不截断。
 
-## 文件架构 / File Architecture
+## 生成命令 / Generation Command
 
-```
-assets/短剧大师v6.1_完整功能介绍.html  ← 单文件，自主展示
-assets/短剧大师v6.1_完整功能介绍.pdf   ← Chrome无头渲染输出
-Desktop/短剧大师v6.1_完整功能介绍.pdf   ← 用户交付副本
-```
-
-## HTML 基础设置 / HTML Foundation
-
-### 尺寸 / Dimensions
-```css
-:root { --slide-w: 390px; --slide-h: 844px; }  /* iPhone 14 竖屏比例 */
-.slide { width:390px; min-height:844px; padding:34px 20px; overflow:hidden; }
-```
-
-### 配色 / Colors
-```css
---gold: #D4A843; --warm-gold: #F0C060;      /* 标题/亮点 */
---bone: #E8DDD0;                              /* 核心正文 */
---text: #ccc; --text-dim: #888;               /* 次级文字 */
---card-bg: #111118; --border: #1a1a28;        /* 卡片 */
---purple: #8B5CF6; --cyan: #06B6D4; --green: #22C55E;
-body { background: #050508; }
-.slide { background: linear-gradient(180deg,#0a0a12,#0d0d18 40%,#0a0a12); }
-```
-
-## 字号体系 — 经过十轮验证 / Font Sizes — Battle-Tested
-
-| 元素 | rem | 说明 |
-|------|:--:|------|
-| 封面标题 h1 | 2.6 | 手机不遮挡 |
-| 页面标题 h2 | 1.45 | 各页统一 |
-| 副标题 .en-sub | 0.7 | 英文辅助 |
-| 大师名字 .name | 0.92 | 卡片内醒目 |
-| 技能描述 .skill | 0.7 | 正文可读 |
-| 数据数字 .stat .num | 1.5 | 不撑出格 |
-| 数据标签 .stat .label | 0.62 | 紧凑 |
-| 流程框 .flow | 0.64 | 等宽字体 |
-| 表格 .table | 0.68 | 清晰 |
-| 高亮 .highlight | 0.82 | 重点 |
-| 页脚 .footer-bar | 0.45 | 不喧宾夺主 |
-| 页脚颜色 | rgba(255,255,255,0.13) | 隐约可见 |
-
-## PDF 生成 / PDF Generation
-
-### Chrome 命令
 ```bash
 "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
   --headless --disable-gpu --no-sandbox \
   --print-to-pdf="输出路径.pdf" --no-pdf-header-footer \
-  "file:///绝对路径.html"
+  "file://HTML路径.html"
 ```
 
-### 防断页 CSS（关键）
+## @page CSS（必须内嵌） / Required @page CSS
+
 ```css
-@page { size: 390px 844px; margin: 0; bleed: 0; marks: none; }
+@page { size: 390px 844px; margin: 0; }
+@page { bleed: 0; marks: none; }
 @media print {
-  body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .slide {
-    break-after: page; page-break-after: always;
-    break-inside: avoid; page-break-inside: avoid;
-    width: 390px !important; height: 844px !important;
-    min-height: 844px !important; max-height: 844px !important;
-    overflow: hidden !important;
-    margin: 0 !important; border-radius: 0 !important;
-  }
-  .slide:last-child { break-after: auto; page-break-after: auto; }
+  body { background: #050508 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { break-after: page; break-inside: avoid; page-break-inside: avoid;
+           margin: 0 !important; border-radius: 0 !important;
+           width: 390px !important;
+           height: 844px !important;
+           min-height: 844px !important;
+           max-height: 844px !important;
+           overflow: hidden !important; }
+  .slide:last-child { break-after: auto; }
 }
 ```
 
-## 常见问题 / Common Pitfalls
+## 字体大小规范 / Font Size Specs
 
-### 🐛 空白残页（第二页只有一个页脚）
-**原因**：内容超出 844px → Chrome 自动分页。
-**修复**：缩减该页内容（去英文行/缩短描述/减小内边距/减小字号）。
+| 元素 | 字号 | 说明 |
+|------|:--:|------|
+| 封面标题 h1 | 2.4rem | 手机一屏可见，不被裁 |
+| 章节标题 h2 | 1.4rem | 金色粗体 |
+| 副标题 .en-sub | 0.7rem | 灰色英文 |
+| 大师卡片名 .name | 0.88rem | 金色粗体 |
+| 大师技能 .skill | 0.66rem | 正文白色 |
+| 表格 .table | 0.64rem | 四列以内 |
+| highlight 框 | 0.78rem | 左侧金色竖线 |
+| 统计数字 .num | 1.4rem | 卡片内数字 |
+| 页脚 .footer-bar | 0.45rem | 透明度 0.13，不可喧宾夺主 |
+| 流程图 .flow | 0.64rem | 暗底卡片 |
 
-### 🐛 页脚过大
-**原因**：`.footer-bar` CSS 规则丢失（被之前的编辑误删）。
-**修复**：检查 CSS 中 `.footer-bar` 是否存在后再生 PDF。
+## 核心设计规则 / Core Design Rules
 
-### 🐛 横向滚动条
-**原因**：ASCII 树形文字太宽（`├─...─...─` 超出 390px）。
-**修复**：改为竖向布局，每项 `<br>` 换行，不用 ASCII 树。
+### 1. 防溢出三件套 / Overflow Prevention Triad
+- 每页 `.slide` 严格 `height: 844px; max-height: 844px; overflow: hidden`
+- 内容多的页面（如品控/技术军团6卡页）→ 去掉英文行，只保留中文
+- 大师卡片 padding 压缩到 `5px 8px`，margin `1px 0`
 
-### 🐛 标题被遮挡（手机上）
-**原因**：h1 过大 + padding 挤压。
-**修复**：h1 ≤ 2.6rem，减小幻灯片 padding-top。
+### 2. 页脚处理 / Footer Rules
+- 页脚用 `position:absolute; bottom:6px`，贴页面最底部
+- 字体 `0.45rem`，颜色 `rgba(255,255,255,0.13)` — 可见但不抢眼
+- **CSS 规则容易丢失**：每次改动后检查 `.footer-bar` 是否仍存在于 `<style>` 中
+- 内容区用 `flex-direction:column; justify-content:center` 居中
 
-### 🐛 数据卡片数字撑出格
-**原因**：`1.8rem` 时 "3,400+" 或 "60→15%" 太宽。
-**修复**：数字 ≤ 1.5rem，长文本拆分到标签行。
+### 3. 竖向排版 / Vertical Layout
+- 所有流程图（flow block）用竖向 `↓` 箭头式，不用横向 ASCII 树
+- 横向文字容易撑出滚动条 → 每项独立一行，加 `<br>` 换行
+- 双卡片用 `display:flex; gap:8px` 左右分栏
 
-### 🐛 装饰线不协调
-**不要用** `.slide::before` 的金色渐变线。暗色背景不需要这个。
+### 4. 颜色体系 / Color System
+- 背景：`#050508` 纯黑 → `#0a0a12` → `#0d0d18`（渐变）
+- 金色：`#D4A843`（主）/ `#F0C060`（亮）
+- 卡片背景：`#111118`
+- 边框：`#1a1a28`（暗）或去掉全部边框（更干净）
+- 页面上方不要金色装饰线（`.slide::before` / `::after`）
+- 封面亮点用圆角标签（`border-radius:14px`），金/紫/青/绿四色
 
-## 设计原则 / Design Principles
+### 5. 双语规则 / Bilingual Rules
+- 每页标题和关键术语中英并列
+- 但内容过多时优先保留中文，砍英文
+- 英文用 `.en` class，字号比正文小 0.1-0.15rem
 
-1. **竖向优先**：所有流程/列表用 `<br>` 竖排，不用横向 ASCII 树
-2. **先紧后松**：内容宁少勿多，撑满页面从精简开始
-3. **页脚克制**：0.45rem + 透明度 0.13，不强眼
-4. **中英双语但中文为主**：英文做辅助色（text-dim），中文做正文色
-5. **封面重数据**：四个 stat 卡片 + 两排 pill 标签，不堆长句
-6. **每次只改一处**：改完→生 PDF→验证，不要一次改多处导致定位困难
-7. **git commit 双语**：`中文描述 / English description` 格式
+### 6. 数据卡片 / Stat Cards
+- 数字 `1.4rem`，不超 `1.5rem`（否则溢出）
+- padding `14px 6px`，gap `8px`
+- 每行 4 个卡片，`min-width:70px`
+- 短数字优先（"15%" 而不是 "60→15%"）
+
+## 常见陷阱 / Common Pitfalls
+
+| 陷阱 | 症状 | 修复 |
+|------|------|------|
+| CSS 规则丢失 | 页脚突然变大、排版错乱 | 全文搜索 `.footer-bar`，补回规则 |
+| 内容溢出空白页 | PDF 多出只有页脚的残页 | 检查该页高度，砍英文行/减padding/降字号 |
+| 横向滚动条 | flow 块出现左右滑道 | ASCII 树 → 竖向箭头式 |
+| 标题被裁 | 手机上看不到完整标题 | h1 降到 2.4rem，加 `margin-top:-10px` |
+| 数字撑出卡片 | 4 字以上数字溢出 | 缩短标签，数字不大于 1.5rem |
+| Chrome PDF 色差 | 暗色变灰 | `-webkit-print-color-adjust: exact` |
+
+## 迭代流程 / Iteration Workflow
+
+1. 修改 HTML → 
+2. Chrome headless 生成 PDF → 
+3. `cp` 到桌面 + `assets/` → 
+4. `git commit`（中英双语）→ 
+5. `git push` 双仓库 →
+6. 用户看桌面 PDF，反馈问题 → 回到 1
+
+每次改进后必做：检查之前修好的问题是否被新改动覆盖（尤其是页脚 CSS 和断页规则）。
+
+> v6.1 验证通过 · 10页竖版暗色影视风 · 中英双语
