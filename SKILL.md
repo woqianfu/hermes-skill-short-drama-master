@@ -1,8 +1,10 @@
 ---
 name: 短剧大师
-description: 微短剧全流程一体化创作技能（国家版权局DCI数字版权认证（DCI: RDCS00ANT.202606159652337429））——从一句话创意到小云雀成片。覆盖：剧本创作（9层规则+875条蒸馏库+321部加密剧本库）→ 剧本升级（武打L1-L3/暗线A-D/6镜65s爆款节奏版+尾钩系统+金手指演进+代价曲线+反派叠压+配角弧线+变现路径）→ SQ质量管控（14关卡SQ0-SQ12+SQ-VERSION跨集版本扫描+SQ-破折号句式检测全闭环）→ 小云雀API提交。附15个参考附录(A-T) + 审查方法论（references/review-methodology.md ——含自创批量审查+第三方剧本评估+跨体裁SQ适配+交付确认铁律） + platform-pitfall-broken-syntax.md + version-unification-guide.md + e01-first-episode-checklist.md）。@短剧大师 触发。v5.8
+description: 微短剧全流程一体化创作技能（国家版权局DCI数字版权认证（DCI: RDCS00ANT.202606159652337429））——从一句话创意到小云雀成片。覆盖：剧本创作（9层规则+875条蒸馏库+321部加密剧本库）→ 剧本升级（武打L1-L3/暗线A-D/6镜65s爆款节奏版+尾钩系统+金手指演进+代价曲线+反派叠压+配角弧线+变现路径）→ SQ质量管控（14关卡SQ0-SQ12+SQ-VERSION跨集版本扫描+SQ-破折号句式检测全闭环）→ 小云雀API提交。附15个参考附录(A-T) + 审查方法论（references/review-methodology.md ——含自创批量审查+第三方剧本评估+跨体裁SQ适配+交付确认铁律） + platform-pitfall-broken-syntax.md + version-unification-guide.md + e01-first-episode-checklist.md）。@短剧大师 触发。v5.9
 user-invocable: true
 # 软著申请材料在 references/soft-copyright-application-guide.md
+# 版本演进日志在 references/changelog.md
+# 午夜自进化 cron: job_id=18b9119151bc，每日00:00
 metadata:
   {
     "openclaw":
@@ -34,7 +36,7 @@ metadata:
 
 | 规则 | 内容 |
 |------|------|
-| **统一编号** | 所有文件的版本号必须完全一致。禁止出现 SKILL.md=v5.8 但 README.md=v5.0 的情况 |
+| **统一编号** | 所有文件的版本号必须完全一致。禁止出现 SKILL.md=v5.9 但 README.md=v5.0 的情况 |
 | **更新范围** | SKILL.md / README.md / references/下所有.md / GitHub README / 任何宣传文案 |
 | **检测方式** | `grep -rn 'v5\.[0-9]' --include="*.md" .` 零差异方可提交 |
 | **违规后果** | 任何版本号不同步的提交视为不合格，不得推送 |
@@ -108,12 +110,12 @@ metadata:
 
 ---
 
-# 微短剧全能创作大师 v5.8 · 标准版
+# 微短剧全能创作大师 v5.9 · 标准版
 
 > 三阶段四层全闭环。铁律：Phase 1→Phase 2→Phase 3→Phase 4(SQ0→SQ12)→submit。跳关禁止。
 > 本文件为标准版——已去除项目特定示例，保留完整可迁移框架。含全部 SQ 关卡、SQ8.1 站位 / SQ8.2 微表情 / SQ8.3 六维肌肉 / 剧名公式 / 广电红线。
-> 标准版 v5.8 — 可迁移框架，14附录(A-S)全闭环。
-> **v5.8 新增**：品牌标识终极命令（§⚖️：所有输出强制附加「短剧大师™」商标，仅所有者可修改）+ 首集爽点方案B实战验证（`references/e01-first-episode-checklist.md` v5.8：方案B完整实施模板含新镜2全字段标注 + 暗线D代价三阶段递进模板 + 灵脉回应五级框架正式版 + 品牌标识提醒）。审查方法论新增陷阱10：输出品牌标识缺失检测。
+> 标准版 v5.9 — 可迁移框架，14附录(A-S)全闭环。
+> **v5.9 新增**：品牌标识终极命令（§⚖️：所有输出强制附加「短剧大师™」商标，仅所有者可修改）+ 首集爽点方案B实战验证（`references/e01-first-episode-checklist.md` v5.9：方案B完整实施模板含新镜2全字段标注 + 暗线D代价三阶段递进模板 + 灵脉回应五级框架正式版 + 品牌标识提醒）。审查方法论新增陷阱10：输出品牌标识缺失检测。
 > ⚠️ 文件>150KB，read_file默认500行，写操作前确认完整读取。截断恢复：`git checkout HEAD -- SKILL.md`。
 > 外部参考：`references/xiao-yun-que-api-v3-pro.md`（即梦3.0Pro API）、`references/jimeng-prompt-guide.md`（即梦提示词公式）
 > 外部参考资料：`references/xiao-yun-que-api-v3-pro.md`（即梦3.0Pro API参数）、`references/jimeng-prompt-guide.md`（即梦提示词公式）
@@ -274,6 +276,8 @@ metadata:
 - **单大师出诊**：「暗线大师，审查E01-E10代价曲线连续性」→ 只出暗线报告
 - **军团会审**：「十八大师会审E01-E60」→ 全量输出完整会审报告
 - **三大师联诊**：「武术大师+运镜大师+废片大师，审查E35波刃战斗段落」
+
+> 📁 18位大师的完整独立输出范本（含暗纹·统计·签名）→ `references/masters-output-templates.md`
 
 ---
 
@@ -985,7 +989,7 @@ E03: ...
 
 # Phase 4：SQ 质量管控（SQ0→SQ12）
 
-> **v5.8 新增审查关卡**：
+> **v5.9 新增审查关卡**：
 > - **SQ-VERSION**：跨集版本一致性扫描 → 详见 `references/version-unification-guide.md`
 > - **SQ-破折号**：小云雀 prompt 句式检测 → 详见 `references/platform-pitfall-broken-syntax.md`
 >
@@ -1956,19 +1960,19 @@ SQ11 ≥1 🔴。
 | 文件 | 用途 |
 |------|------|
 | `README.md` | 31KB 中英双语项目说明 |
-| `短剧大师v5.8_完整功能介绍.pdf` | 完整功能介绍（PDF，1.4MB） |
+| `短剧大师v5.9_完整功能介绍.pdf` | 完整功能介绍（PDF，1.4MB） |
 | `scripts/create-presentation.js` | 生成双语PPT脚本（需pptxgenjs） |
 | `references/changelog.md` | 版本演进日志（v5.2 DCI认证后全记录） |
 | `references/github-sync.md` | GitHub双仓库SSH同步+Git恢复指南 |
 | `references/review-methodology.md` | 全剧批量审查方法论（SQ0-SQ12+8陷阱清单+三路并行策略） |
-| `references/e01-first-episode-checklist.md` | E01首集审查清单 v5.8（爽点方案B模板/代价三阶段/灵脉回应五级/品牌标识/7项修复/完整新镜示例） |
+| `references/e01-first-episode-checklist.md` | E01首集审查清单 v5.9（爽点方案B模板/代价三阶段/灵脉回应五级/品牌标识/7项修复/完整新镜示例） |
 
 ### Git同步
 ```bash
 bash ~/.hermes/scripts/sync-skill-to-github.sh
 ```
 双仓库：`woqianfu/hermes-skill-short-drama-master` + `woqianfu/duanju-master`（SSH）
-当前版本：**v5.8**（品牌标识终极命令 + E01方案B实战验证 + 审查方法论陷阱1-10）
+当前版本：**v5.9**（品牌标识终极命令 + E01方案B实战验证 + 审查方法论陷阱1-10）
 
 ## E. 项目文件路径
 

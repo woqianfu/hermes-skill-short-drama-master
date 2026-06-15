@@ -1,11 +1,11 @@
-# 🎬 短剧大师 (Short Drama Master) v5.8
+# 🎬 短剧大师 (Short Drama Master) v5.9
 
 > **From one sentence to finished AI short drama — the world's first fully closed-loop, precision-engineered, self-evolving short drama creation system.**
 
 > **一句话 → AI微短剧成片。全球首个全流程闭环、精密工程化、自我进化的微短剧创作系统。**
 
 <p align="center">
-  <img src="https://img.shields.io/badge/版本-v5.8-ff6b35?style=for-the-badge" alt="Version">
+  <img src="https://img.shields.io/badge/版本-v5.9-ff6b35?style=for-the-badge" alt="Version">
   <img src="https://img.shields.io/badge/行数-2,870+-2ea44f?style=for-the-badge" alt="Lines">
   <img src="https://img.shields.io/badge/附录-15(A--T)-blue?style=for-the-badge" alt="Appendices">
   <img src="https://img.shields.io/badge/关卡-14(SQ0--SQ12)-red?style=for-the-badge" alt="Quality Gates">
