@@ -44,7 +44,12 @@ h2 { font-size:1.45rem; color:var(--warm-gold); margin-bottom:4px; font-weight:8
 .flow { font-size:0.68rem; background:var(--card-bg); border:1px solid var(--border); border-radius:8px; padding:10px; margin:6px 0; font-size:0.64rem; opacity:0.85; line-height:1.4; font-family:'SF Mono',Menlo,monospace; color:var(--text-dim); white-space:pre; overflow-x:auto; }
 .ver-line { font-size:0.64rem; color:var(--text-dim); line-height:1.6; text-align:left; margin:0 auto; max-width:260px; }
 @page { size: 390px 844px; margin: 0; }
-@media print { body { background: #050508 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; } .slide { break-after: page; page-break-after: always; margin: 0 !important; border-radius: 0 !important; width: 390px !important; min-height: 844px !important; } }
+@page { bleed: 0; marks: none; }
+@media print {
+  body { background: #050508 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slide { break-after: page; page-break-after: always; break-inside: avoid; page-break-inside: avoid; margin: 0 !important; border-radius: 0 !important; width: 390px !important; min-height: 844px !important; max-height: 844px !important; overflow: hidden !important; }
+  .slide:last-child { break-after: auto; page-break-after: auto; }
+}
 </style>
 </head>
 <body>
