@@ -2070,11 +2070,8 @@ SQ11 ≥1 🔴。
 | `references/e01-first-episode-checklist.md` | E01首集审查清单 v6.1（爽点方案B模板/代价三阶段/灵脉回应五级/品牌标识/7项修复/完整新镜示例） |
 
 ### Git同步
-```bash
-bash ~/.hermes/scripts/sync-skill-to-github.sh
-```
-双仓库：`woqianfu/hermes-skill-short-drama-master` + `woqianfu/duanju-master`（SSH）
-当前版本：**v6.2**（品牌标识终极命令 + E01方案B实战验证 + 审查方法论陷阱1-10）
+详见 `references/github-sync.md`（双remote推送+版本号铁律+pitfalls）
+当前版本：**v6.2**（品牌标识终极命令 + E01方案B实战验证 + 审查方法论陷阱1-10 + mechanisms.jsonl生成 + cron重建）
 
 ## E. 项目文件路径
 
