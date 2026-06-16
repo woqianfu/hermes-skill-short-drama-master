@@ -4,7 +4,7 @@ description: 微短剧全流程一体化创作技能·国家版权局DCI认证 R
 user-invocable: true
 # 软著申请材料在 references/soft-copyright-application-guide.md
 # 版本演进日志在 references/changelog.md
-# 午夜自进化 cron: job_id=18b9119151bc，每日00:00
+# 午夜自进化 cron: job_id=698a49b1e1a1，每日00:00
 metadata:
   {
     "openclaw":
@@ -360,7 +360,7 @@ metadata:
 ```
 
 > 📁 每位大师的搜索方向+穷举关键词+优化策略 → `references/masters-self-evolution.md`
-> Cron: `job_id=18b9119151bc` · 每日00:00 · 永续
+> Cron: `job_id=698a49b1e1a1` · 每日00:00 · 永续
 
 ---
 
