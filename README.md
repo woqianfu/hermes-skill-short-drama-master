@@ -1,4 +1,4 @@
-# 🎬 短剧大师™ · Short Drama Master v6.2
+# 🎬 短剧大师™ · Short Drama Master v6.2.2
 
 > **720P的prompt量 → 1080P的成片质量。省一半token，降七成废片。**
 > **720P prompt volume → 1080P final quality. Half the tokens, 70% less waste.**
@@ -7,15 +7,16 @@
 > From one sentence to finished AI short drama. The world's first fully closed-loop, precision-engineered, self-evolving short drama creation system.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-v6.2-ff6b35?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Masters-19-8A2BE2?style=for-the-badge">
-  <img src="https://img.shields.io/badge/SKILL.md-3,400+_lines-2ea44f?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-v6.2.2-ff6b35?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Masters-20(4_Corps)-8A2BE2?style=for-the-badge">
+  <img src="https://img.shields.io/badge/SKILL.md-3,500+_lines-2ea44f?style=for-the-badge">
   <img src="https://img.shields.io/badge/Quality_Gates-14(SQ0--SQ12)-red?style=for-the-badge">
   <img src="https://img.shields.io/badge/Dimensions-20-purple?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Appendices-15(A--T)-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Appendices-31(A--U)-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Research_Corps-Case_Master_+_6_Team-FF6B35?style=for-the-badge">
   <img src="https://img.shields.io/badge/Scripts-321_encrypted+875_distilled-333?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platforms-Xiaoyunque+Seedance2.0-orange?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Evolving-Daily_00:00-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Evolving-Daily_02:30-green?style=for-the-badge">
   <img src="https://img.shields.io/badge/DCI-RDCS00ANT.202606159652337429-0066CC?style=for-the-badge">
   <img src="https://img.shields.io/badge/Token_Saved-~73%25-brightgreen?style=for-the-badge">
 </p>
@@ -28,9 +29,9 @@
 |------|------|
 | AI视频废片率>60%，反复重抽烧钱 / >60% waste rate, burning money on retries | **BX Protocol降废片率至<15%** / Waste rate reduced to <15% |
 | prompt写太长太贵，太短太糙 / Prompts too long (expensive) or too short (bad quality) | **五段式公式≤400字，720P量出1080P质** / Compact formula, premium output |
-| 烂剧本直接提交生成，浪费token / Bad scripts submitted directly, wasting tokens | **19大师预审→不达标提交不了** / Pre-check gates block bad submissions |
+| 烂剧本直接提交生成，浪费token / Bad scripts submitted directly, wasting tokens | **20大师预审→不达标提交不了** / Pre-check gates block bad submissions |
 | 60集角色脸变来变去 / Characters look different across 60 episodes | **LoRA锁定+三视图+Seed固定** / Character locking prevents face drift |
-| 每天手工写prompt改剧本 / Manual prompt writing and script editing daily | **午夜00:00自动进化+全网搜索+自愈推送** / Auto-evolves daily at midnight |
+| 每天手工写prompt改剧本 / Manual prompt writing and script editing daily | **午夜02:30自动进化+全网搜索+自愈推送** / Auto-evolves daily at 02:30 |
 
 ---
 
