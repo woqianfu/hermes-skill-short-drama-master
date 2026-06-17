@@ -1,15 +1,35 @@
-# 加密剧本库 (319 files, 19MB) - not for public distribution
-# 加密剧本库不公开分发
-assets/short-writing/full-scripts/
+# 短剧大师 .gitignore — 双仓推送脱敏规则
 
-# Node modules
-scripts/node_modules/
+# 本地环境/配置
+.env
+.env.local
+*.log
+*.pid
 
-# Backup files
-*.original
-*.step1
-*.bak
+# 操作系统
+.DS_Store
+Thumbs.db
 
-# Python cache
+# 会话/缓存
+session-*
 __pycache__/
 *.pyc
+node_modules/
+
+# API Key 相关文件（即使注释了也排除）
+**/api_keys*
+**/credentials*
+
+# 临时生成文件
+tmp/
+temp/
+*.tmp
+
+# 个人工作文件
+personal-*
+私人-*
+我的-*
+
+# 注意：assets/short-writing/ 包含完整剧本库，
+# 如不想公开请取消下面注释
+# assets/short-writing/
