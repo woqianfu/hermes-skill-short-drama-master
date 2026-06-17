@@ -1,24 +1,38 @@
-# 版本号与发布规则 — 短剧大师™
+# 短剧大师版本发布规则 — 硬性规范
 
-## 版本命名
-格式 `vX.Y.Z`：
-- **X** = 大版本（方法论重构、体系级变更）
-- **Y** = 功能版本（新增大师、新板块）
-- **Z** = 补丁/推送版本（每次推送递增）
+## 每次推送前必须更新的文件
 
-## 版本源
-以 GitHub 仓库版本为准，本地以远程为准。
+| 文件 | 更新内容 | 必做？ |
+|------|----------|--------|
+| `VERSION` | 写入最新版本号（如 `v6.2.5`） | ✅ |
+| `SKILL.md` | frontmatter `description` 版本号 + 亮点同步 | ✅ |
+| `README.md` | 标题版本号 + 所有 badges 同步 | ✅ |
+| `assets/短剧大师vX.Y.Z_完整功能介绍.html` | 新建文件，所有页面内容同步 | ✅ |
+| `assets/短剧大师vX.Y.Z_完整功能介绍.pdf` | 新建文件，与 HTML 同步生成 | ✅ |
 
-## 每次推送
-1. 递增 Z（v6.2.1 → v6.2.2 → …）
-2. VERSION 文件 + SKILL.md frontmatter + README 同步
-3. commit 格式：`vX.Y.Z: 中文改动 / English change`
+## 步骤
 
-## 展示同步（铁律）
-推送前必须更新展示文件：
-1. `assets/短剧大师vX.Y.Z_完整功能介绍.html` — 竖屏暗色影视风文稿
-2. `assets/短剧大师vX.Y.Z_完整功能介绍.pdf` — Chrome 无头渲染 PDF
-3. 新大师/新平台/新时间等所有变更同步反映
+```bash
+# 1. 更新 VERSION
+echo "v6.2.5" > VERSION
 
-## 清理旧版
-推送时清理 `assets/` 中的旧版展示文件，只保留当前版本。
+# 2. 更新 SKILL.md frontmatter
+#    打开 SKILL.md 第1-3行，改 version + description
+
+# 3. 更新 README.md
+#    改标题版本号 + 所有 shields.io badges
+
+# 4. 生成 HTML + PDF
+#    cp assets/短剧大师v6.2.4_完整功能介绍.html assets/短剧大师v6.2.5_完整功能介绍.html
+#    然后修改内容 + 生成 PDF
+
+# 5. git add -A && git commit -m "v6.2.5: ..."
+# 6. git push origin main && git push duanju main
+```
+
+## 不更新的后果
+
+- 版本号不一致 → Agent 混淆
+- README badges 过时 → 对外展示错误
+- 展示文件无新功能 → 用户/客户看不到最新能力
+- **不可接受。每次推送都必须执行上述流程。**
