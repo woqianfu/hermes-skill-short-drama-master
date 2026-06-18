@@ -34,6 +34,29 @@
 
 每次提交必须加小版本号（如 v6.2.1 → v6.2.2）。根目录 VERSION 文件记录版本号。SKILL.md frontmatter 和 README 同步更新。commit message 标注版本号。
 
+### 案例大师研究：网络搜索不可用时的兜底方案
+
+当 web_search 工具不可用（Tavily key失效/CAPTCHA拦截/超时）时，不能直接放弃——**使用本地蒸馏案例库做兜底分析**：
+
+```bash
+python3 -c "
+import json
+with open('assets/short-writing/library/case_cards.jsonl') as f:
+    cases = [json.loads(line) for line in f if line.strip()]
+for c in cases:
+    text = json.dumps(c, ensure_ascii=False)
+    score = sum(1 for kw in ['种田','末世','大女主','穿越','战神','漫剧'] if kw in text)
+    if score >= 2: print(c.get('title',''), score)
+"
+```
+
+**兜底输出格式**：共性机制提炼 + 赛道判断（上升/成熟/衰退）+ 差异化建议。
+**注意**：本地库数据有时滞性，报告开头标注「网络搜索受限，基于本地案例库分析」。
+
+### 双仓同步规则
+
+每次推送必须同时推两个仓库（origin + duanju），不能只推一个。
+
 > 以下规则是基于实战教训的补充，嵌入SKILL.md的Agent行为准则章节。
 
 ## 省钱数据铁律

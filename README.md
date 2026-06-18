@@ -175,7 +175,7 @@
 | 竖屏构图 / Vertical Composition | **8** 种/types |
 | 废片率降低 / Waste Reduction | **60%→15%** |
 | API调用节省 / Token Savings | **~73%** |
-| 迭代版本 / Versions | v1.0 → **v6.2** |
+| 迭代版本 / Versions | v1.0 → **v6.2.4** |
 
 ---
 
