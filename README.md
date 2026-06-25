@@ -181,8 +181,8 @@
 
 ## 🎯 亮点速览 / Highlights
 
-1. **十九大师人格化** / 19 Masters Personified — 每位大师有专长、范本、签字 / Each master has domain, template, signature
-2. **720P→1080P** / 用精密工程替代暴力堆料，省73% token / Precision engineering replaces brute force, saves 73% tokens
+1. **二十二大师人格化** / 22 Masters Personified — 每位大师有专长、范本、签字 / Each master has domain, template, signature
+2. **720P→1080P** / 用精密工程替代暴力堆料，省75% token / Precision engineering replaces brute force, saves 75% tokens
 3. **六维肌肉级指令** / 6D Facial Control — AI短剧唯一面部表情精控体系 / The only facial expression control system in AI short drama
 4. **20维质量穷举** / 20D Quality Matrix — 每维四步闭环，可复现方法论 / Each dimension has a 4-step closed loop
 5. **BX Protocol降废片** / Waste Reduction — 9条法则+四级分类+五段式公式 / 9 laws + 4-tier classification
